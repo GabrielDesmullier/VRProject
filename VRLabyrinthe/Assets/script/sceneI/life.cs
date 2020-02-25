@@ -1,13 +1,24 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class life : MonoBehaviour
 
 {
+    private Vector3 base_ref;
     private int lifeLevel;
     private bool isVisible;
+    public TextMeshProUGUI mort = default;
+    public TextMeshProUGUI mort2 = default;
+    public TextMeshProUGUI affichae_pdv = default;
     
+    void Start()
+    {
+        base_ref = new Vector3(46,2, 16);
+        mort.text = "";
+        mort2.text = "";
+    }
     // Start is called before the first frame update
     public bool getIsVisible()
     {
@@ -31,7 +42,7 @@ public class life : MonoBehaviour
         lifeLevel = zdhazuhd;
     }
 
-        public int getLifeLevel()
+    public int getLifeLevel()
     {
         return lifeLevel;
     }
@@ -40,27 +51,39 @@ public class life : MonoBehaviour
         lifeLevel = 100;
         isVisible = true;
     }
-    void Start()
-    {
-        
-    }
 
     private void OnTriggerEnter(Collider collision)
     {
         
         Debug.Log(message: collision.gameObject.name);
-        if (collision.gameObject.tag == "ghost")
+        if (collision.gameObject.CompareTag("ghost"))
         {
-            lifeLevel = lifeLevel - 50;
+            lifeLevel = lifeLevel - 20;
             Debug.Log(message: collision.gameObject.name);
+            if(lifeLevel <= 0)
+            {
+                transform.position = base_ref;
+                mort.text = "Game Over";
+                mort2.text = "Restart (Press R)";
+                lifeLevel = 100;
+            }
         }
-        if (collision.gameObject.tag == "movingHedge")
+        if (collision.gameObject.CompareTag("movingHedge"))
         {
             
             lifeLevel = lifeLevel-30;
             Debug.Log(message: collision.gameObject.name);
-
-
+            if(lifeLevel <= 0)
+            {
+                this.transform.position = base_ref;
+                mort.text = "Game Over";
+                mort2.text = "Restart (Press R)";
+                lifeLevel = 100;
+            }
+        }
+        if(collision.gameObject.CompareTag("Checkpoint"))
+        {
+            base_ref = transform.position;
         }
 
 
@@ -69,10 +92,14 @@ public class life : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (lifeLevel <= 0)
-        {
-            Debug.Log(message: "death");
-            Destroy(gameObject);
+        affichae_pdv.text = lifeLevel.ToString();
+        if(mort.text == "Game Over"){
+            transform.position = base_ref;
+            if (Input.GetKeyDown(KeyCode.R))
+            {
+                mort.text = "";
+                mort2.text = "";
+            }
         }
     }
 }

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3437374012588915737}
   - component: {fileID: 3928991584921850509}
   - component: {fileID: 3419393748271817788}
-  - component: {fileID: 5963449303884254500}
+  - component: {fileID: 4526745080014870668}
   m_Layer: 11
   m_Name: GhostSprite
   m_TagString: ghost
@@ -89,13 +89,13 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5581634067033238799}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 0aa34d7d628bdb04082aa16112cc8fd1, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 2.35, y: 3.85, z: 0.24}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &5963449303884254500
+--- !u!114 &4526745080014870668
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -107,4 +107,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 216fd9f28b91ac244a02efeee19cfb6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
+  speed: 2

@@ -11,7 +11,7 @@ public class ghostControlleur : MonoBehaviour
     private bool active;
 
 
-    [SerializeField] private float speed=10.0f;
+    [SerializeField] private float speed=2.0f;
     
     // Start is called before the first frame update
     void Start()

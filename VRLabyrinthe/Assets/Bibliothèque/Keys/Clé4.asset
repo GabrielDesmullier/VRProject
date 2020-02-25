@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e41ba8b38f3b9a44bb79b91ebc61a45f, type: 3}
+  m_Name: "Cl\xE94"
+  m_EditorClassIdentifier: 
+  color: {fileID: 2100000, guid: 819b8c8d9838bd547b674948ef14b6a7, type: 2}
+  key: {fileID: 6669304848897980840, guid: 82984ec71d8e15e449a1b52993a0f63b, type: 3}
+  number: 4

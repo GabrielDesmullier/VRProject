@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e41ba8b38f3b9a44bb79b91ebc61a45f, type: 3}
+  m_Name: "Cl\xE91"
+  m_EditorClassIdentifier: Assembly-CSharp::Perso_
+  color: {fileID: 2100000, guid: e4c5c367613e59d49add6b821657d287, type: 2}
+  key: {fileID: 8321081407223672434, guid: dc1d7a34c669d594d92c14d25e85006e, type: 3}
+  number: 1

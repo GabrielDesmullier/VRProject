@@ -5,13 +5,22 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: "Assets/Scenes/Menu_D\xE9but.unity"
+    guid: 21f950e9874366544a97bb76760364dd
+  - enabled: 1
+    path: Assets/Scenes/Labyrinthe.unity
+    guid: 242f323043248234eb38faba95c563ec
   - enabled: 1
     path: "Assets/Scenes/Biblioth\xE8que.unity"
     guid: 64e5e9bfa774ea743818cd9690e31de1
   - enabled: 1
     path: Assets/Scenes/galerieRoi.unity
     guid: 0f3c54609f2ca764abb467e9aaf59730
+  - enabled: 1
+    path: Assets/Scenes/FinJeu.unity
+    guid: fc1c41e73cb31284cada66256f3fdfb2
   m_configObjects: {}
