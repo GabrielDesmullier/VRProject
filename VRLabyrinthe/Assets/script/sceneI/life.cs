@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class life : MonoBehaviour
 
@@ -72,7 +73,7 @@ public class life : MonoBehaviour
         if (lifeLevel <= 0)
         {
             Debug.Log(message: "death");
-            Destroy(gameObject);
+            SceneManager.LoadScene("Labyrinthe");
         }
     }
 }

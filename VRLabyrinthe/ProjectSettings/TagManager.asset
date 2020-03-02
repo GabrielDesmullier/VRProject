@@ -6,6 +6,8 @@ TagManager:
   tags:
   - ghost
   - movingHedge
+  - Key
+  - Key_D
   layers:
   - Default
   - TransparentFX
@@ -25,7 +27,7 @@ TagManager:
   - stair
   - plafon
   - library
-  - 
+  - key
   - 
   - 
   - 

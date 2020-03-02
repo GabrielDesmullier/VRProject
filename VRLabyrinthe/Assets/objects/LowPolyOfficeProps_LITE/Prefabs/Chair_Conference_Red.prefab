@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 33385636233523286}
   - component: {fileID: 23335733355726956}
   - component: {fileID: 65469211362010272}
+  - component: {fileID: 5550472232225754094}
   m_Layer: 13
   m_Name: Chair_Conference_Red
   m_TagString: Untagged
@@ -92,3 +93,31 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.54470736, y: 0.8170257, z: 0.482822}
   m_Center: {x: 0, y: 0.40851286, z: -0.009905316}
+--- !u!114 &5550472232225754094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1570773561403146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4de27f8a07624fa4bb7fa09ba9bb07a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  posOffset: {x: 0, y: 0, z: 0}
+  rotOffset: {x: 0, y: 0, z: 0}
+  m_initGrabDistance: 0.5
+  m_followingDuration: 0.04
+  m_overrideMaxAngularVelocity: 1
+  m_unblockableGrab: 1
+  m_afterGrabbed:
+    m_PersistentCalls:
+      m_Calls: []
+  m_beforeRelease:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onDrop:
+    m_PersistentCalls:
+      m_Calls: []
+  m_scrollingSpeed: 0.01
